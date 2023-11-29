@@ -1,0 +1,8 @@
+-папка
+ ++ index.ts
+ ++ test.js
+ ++ test.ts
+ ++ kaka.js
+ -- kaka.js
+
+ git add *.
