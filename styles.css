@@ -1,3 +1,9 @@
+* {
+  color: #1b1c21;
+  font-family: TT Lakes;
+  font-style: normal;
+}
+
 .nav__left-block {
   display: flex;
   align-items: center;
@@ -10,8 +16,8 @@
   gap: 16px;
 }
 
-.nav__divider-right,
-.nav__divider-left {
+.nav__divider_right,
+.nav__divider_left {
   margin: 0 4px 0 4px;
 }
 
@@ -32,10 +38,7 @@
 }
 
 .main__page-title {
-  color: #1b1c21;
-  font-family: TT Lakes;
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.6px;
@@ -53,11 +56,8 @@
 
 .main__text-1,
 .main__text-2 {
-  color: #1b1c21;
   text-align: right;
-  font-family: TT Lakes;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -65,7 +65,9 @@
   padding-right: 8px;
 }
 
-.main__settings-search {
+.main__links,
+.main__link_repair,
+.main__link_checkstatus {
   display: flex;
   align-items: center;
 }
@@ -77,10 +79,7 @@
 }
 
 .main__title {
-  color: #1b1c21;
-  font-family: TT Lakes;
   font-size: 28px;
-  font-style: normal;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.6px;
@@ -106,9 +105,7 @@
   height: 40px;
   color: #7e7e82;
   background: #f8f8f8;
-  font-family: TT Lakes;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -130,20 +127,14 @@
 }
 
 .info_text {
-  color: #1b1c21;
-  font-family: TT Lakes;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: 0.2px;
 }
 
 .info__text-second {
-  color: #1b1c21;
-  font-family: TT Lakes;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.2px;
@@ -159,18 +150,15 @@
 }
 
 .expand__text {
-  color: #1b1c21;
-  font-family: TT Lakes;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.2px;
   padding-bottom: 12px;
   padding-left: 8px;
 }
 
-.img__cps {
+.info__img-cps {
   width: 100%;
 }
 
@@ -185,9 +173,8 @@
     padding: 0px 48px 0 0px;
     width: 312px;
   }
-  .nav__left-block {
-    gap: 20px;
-  }
+  .nav__left-block,
+  .main__highlight-title,
   .nav__right-block {
     gap: 20px;
   }
@@ -195,10 +182,7 @@
     display: flex;
     padding: 32px 25px 40px;
   }
-  .main__highlight-title {
-    gap: 20px;
-  }
-  .img__cps {
+  .info__img-cps {
     border-radius: 6px;
     width: 360px;
     height: 208px;
@@ -209,7 +193,8 @@
 }
 
 @media screen and (min-width: 1119px) {
-  .header {
+  .header,
+  .menu__before-laptop {
     display: none;
   }
   .info {
@@ -229,26 +214,26 @@
   .main__highlight-title {
     gap: 30px;
   }
-  .img__cps {
+  .info__img-cps {
     width: 531px;
     height: 307px;
   }
 }
 
-
 @media screen and (max-width: 768px) {
-  .nav__divider-left,
-  .nav__call-2,
-  .nav__chat-2,
-  .nav__profile-2,
+  .nav__divider_left,
+  .nav__call_tablet,
+  .nav__chat_tablet,
+  .nav__profile_tablet,
   .info__text-second {
     display: none;
   }
 }
 
 @media screen and (max-width: 1119px) {
-  .main__settings-search,
-  .info__text-third {
+  .main__links,
+  .info__text-third,
+  .menu__on-laptop {
     display: none;
   }
 }
