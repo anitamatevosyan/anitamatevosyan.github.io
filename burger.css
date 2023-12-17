@@ -5,7 +5,7 @@
 
 .common {
     width: 320px;
-height: 1024px;
+height: 100%;
 display: flex;
     flex-direction: column;
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
@@ -45,6 +45,12 @@ display: flex;
     flex-flow: wrap;
 }
 
+.main__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .main__items {
     display: flex;
     flex-direction: column;
@@ -65,6 +71,16 @@ display: flex;
     padding: 0;
 }
 
+.main__item:focus {
+    color: #7E7E82;
+}
+
+.main__item:focus::before {
+    position: absolute;
+    left: 0;
+    content: url('./img/highlight.svg')
+}
+
 .main__buttons {
     border: 0;
     background-color: white;
@@ -75,6 +91,18 @@ display: flex;
 
 .main__contacts{
 display: flex;
-align-items: flex-end;
+flex-wrap: wrap;
+align-content: flex-end;
+gap: 40px;
+}
 
+.main__languages {
+    display: flex;
+    gap: 7px;
+}
+
+.contacts__items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
