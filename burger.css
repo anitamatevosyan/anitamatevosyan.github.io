@@ -1,0 +1,80 @@
+* {
+    font-family: TT Lakes;
+    font-style: normal;
+}
+
+.common {
+    width: 320px;
+height: 1024px;
+display: flex;
+    flex-direction: column;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    padding: 18px 24px 32px 24px;
+    box-sizing: border-box;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header__left {
+    border: 0;
+    background-color: white;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.header__right {
+    border: 0;
+    background-color: white;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    width: 222px;
+    height: 876px;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.main__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 54px;
+    
+}
+
+.main__item {
+    color: #1B1C21;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.2px;
+    border: 0;
+    background-color: white;
+    padding: 0;
+}
+
+.main__buttons {
+    border: 0;
+    background-color: white;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.main__contacts{
+display: flex;
+align-items: flex-end;
+
+}
