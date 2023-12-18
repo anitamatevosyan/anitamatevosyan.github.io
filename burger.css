@@ -69,6 +69,12 @@ display: flex;
     border: 0;
     background-color: white;
     padding: 0;
+    transition: all 0.3s ease;
+
+}
+
+.main__item:hover {
+    opacity: 0.7;
 }
 
 .main__item:focus {
@@ -78,7 +84,7 @@ display: flex;
 .main__item:focus::before {
     position: absolute;
     left: 0;
-    content: url('./img/highlight.svg')
+    content: url('./img/highlight\ \(1\).svg')
 }
 
 .main__buttons {
@@ -106,3 +112,47 @@ gap: 40px;
     flex-direction: column;
     gap: 16px;
 }
+
+.main__info_email{
+    color: #1B1C21;
+    font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: -0.2px;
+text-decoration: none;
+}
+
+.main__info_number{
+    color: #1B1C21;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+letter-spacing: -0.6px;
+text-decoration: none;
+}
+
+.main__language__on-click{
+    color: black;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    }
+
+.main__language__on-click:focus {
+    color: gray; 
+    opacity: 0.7;
+}
+
+.main__language__on-click:hover {
+    opacity: 0.7;
+}
+
+
+
