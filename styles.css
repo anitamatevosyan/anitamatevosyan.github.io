@@ -91,7 +91,7 @@ gap: 32px;
 .menu {
   display: flex;
   overflow: scroll;
-  padding: 24px 0 0 16px;
+  padding-left: 16px;
 }
 
 .menu::-webkit-scrollbar {
@@ -134,7 +134,7 @@ gap: 32px;
 }
 
 .info {
-  padding: 24px 16px 12px 16px;
+  padding: 0 16px 12px 16px;
 }
 
 .info_text {
@@ -149,7 +149,6 @@ gap: 32px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.2px;
-  padding-top: 20px;
 }
 
 .info__expand {
@@ -174,12 +173,24 @@ gap: 32px;
   width: 100%;
 }
 
+.section-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     padding: 18px 24px;
   }
   .menu {
-    padding: 32px 0 0 24px;
+    padding-left: 24px 
   }
   .info {
     padding: 0;
@@ -191,7 +202,7 @@ gap: 32px;
   }
   .article {
     display: flex;
-    padding: 32px 25px 40px;
+    padding: 0 24px 40px;
     gap: 48px;
     justify-content: space-between;
   }
@@ -202,6 +213,9 @@ gap: 32px;
   }
   .info__expand {
     padding-top: 10px;
+  }
+  .section-main{
+    gap: 32px;
   }
 }
 
@@ -214,9 +228,9 @@ gap: 32px;
     padding: 0;
   }
   .menu {
-    padding: 8px 0 0 32px;
     overflow: unset;
     flex-wrap: wrap;
+    padding-left: 32px;
   }
   .main__page-title {
     display: flex;
@@ -231,8 +245,11 @@ gap: 32px;
     width: 531px;
     height: 307px;
   }
+  .section-main{
+    gap: 14px;
+  }
   .article {
-    padding: 15px 28px 0 34px;
+    padding: 0 28px 0 34px;
   }
 }
 
