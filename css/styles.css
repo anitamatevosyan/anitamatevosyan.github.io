@@ -1,3 +1,10 @@
+@import "burger.css";
+@import "grid.css";
+@import "swiper2.css";
+@import "swiper3.css";
+@import "Modal_feedback.css";
+@import "Modal_call.css";
+
 * {
   color: #1b1c21;
   font-family: TT Lakes;
@@ -49,8 +56,8 @@
 
 .main {
   background: #f8f8f8;
-  width: 100%;
-  height: 509px;
+  /* width: 100%; */
+  /* height: 509px; */
   border-top: 1px;
 }
 
@@ -64,8 +71,8 @@
   display: flex;
   padding-right: 8px;
 }
-.main__links{
-gap: 32px;
+.main__links {
+  gap: 32px;
 }
 
 .main__links,
@@ -96,7 +103,7 @@ gap: 32px;
 
 .menu::-webkit-scrollbar {
   display: none;
-} 
+}
 
 .menu_item {
   height: 40px;
@@ -165,8 +172,6 @@ gap: 32px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.2px;
-  
-
 }
 
 .info__img-cps {
@@ -176,6 +181,7 @@ gap: 32px;
 .section-main {
   display: flex;
   flex-direction: column;
+
   gap: 24px;
 }
 
@@ -185,12 +191,45 @@ gap: 32px;
   gap: 20px;
 }
 
+.footer-text {
+  /* display: inline-flex;
+  align-items: center; */
+  /* cursor: pointer; */
+  flex-wrap: nowrap;
+  padding-right: 24px;
+  background-image: url("../img/more.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.footer {
+  color: #7e7e82;
+  text-align: center;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  opacity: 0.7218;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-top: 1px solid #d9fff5;
+  padding: 20px;
+}
+
+/* .footer_buttom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+} */
+
 @media screen and (min-width: 768px) {
   .header {
     padding: 18px 24px;
   }
   .menu {
-    padding-left: 24px 
+    padding-left: 24px;
   }
   .info {
     padding: 0;
@@ -214,12 +253,17 @@ gap: 32px;
   .info__expand {
     padding-top: 10px;
   }
-  .section-main{
+  .section-main {
     gap: 32px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
   }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1440px) {
   .header,
   .menu__before-laptop {
     display: none;
@@ -245,7 +289,7 @@ gap: 32px;
     width: 531px;
     height: 307px;
   }
-  .section-main{
+  .section-main {
     gap: 14px;
   }
   .article {
@@ -263,10 +307,16 @@ gap: 32px;
   }
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1440px) {
   .main__links,
   .info__text-third,
   .menu__on-laptop {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    padding-left: 320px;
   }
 }
