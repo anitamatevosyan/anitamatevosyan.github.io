@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "js/index.js",
+  "url": "git+https://github.com/anitamatevosyan/anitamatevosyan.github.io.git",
+  "homepage": "http://anitamatevosyan.github.io/anitamatevosyan.github.io",
   "scripts": {
     "build": "webpack",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -25,5 +29,8 @@
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
