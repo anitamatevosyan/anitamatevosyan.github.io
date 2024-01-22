@@ -1,5 +1,5 @@
 .section_mob-feedback2 {
-  width: 320px;
+  width: 440px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,10 +7,11 @@
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   box-sizing: border-box;
-  padding: 24px 16px 75px 16px;
+  padding: 40px 32px;
   right: 0px;
   position: fixed;
   z-index: 1001;
+  box-sizing: border-box;
 }
 
 .feedback2 {
@@ -57,7 +58,7 @@
   border-radius: 8px;
   border: 1px solid #eaeaea;
   background: #fff;
-  width: 288px;
+  width: 376px;
   height: 48px;
   flex-shrink: 0;
 }
@@ -139,9 +140,7 @@
 @media screen and (max-width: 767px) {
   .section_mob-feedback2 {
     position: fixed;
-    display: none;
     flex-direction: column;
-    width: 100%;
     width: 320px;
     height: 100%;
     max-height: 100vh;
@@ -151,9 +150,15 @@
     opacity: 1;
     z-index: 1000;
     left: 0;
+    padding: 24px 16px;
   }
   .section_btn2 {
     padding-bottom: 32px;
+  }
+  .entry-field_item2 {
+    width: 288px;
+    height: 48px;
+    flex-shrink: 0;
   }
 }
 @media screen and (min-width: 767px) {

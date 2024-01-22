@@ -49,3 +49,18 @@ document
     }
     juimbc.classList.toggle("open");
   });
+
+const juimbcc = document.querySelector(".feedback2");
+document
+  .querySelector(".burger_feedback2")
+  .addEventListener("click", function () {
+    const els = document.querySelectorAll(".open");
+    if (els.length) {
+      for (const el of els) {
+        el &&
+          !el.classList.contains("feedback2") &&
+          el.classList.toggle("open");
+      }
+    }
+    juimbcc.classList.toggle("open");
+  });

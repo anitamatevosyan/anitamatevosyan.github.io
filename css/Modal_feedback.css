@@ -9,12 +9,12 @@
 }
 
 .common_feedback {
-  width: 320px;
+  width: 440px;
   height: 100vh;
   flex-direction: column;
   background: white;
   box-shadow: 16px 0px 52px 0px rgba(0, 0, 0, 1);
-  padding: 18px 24px 32px 24px;
+  padding: 40px 32px;
   box-sizing: border-box;
   right: 0px;
   position: fixed;
@@ -50,7 +50,7 @@
   border-radius: 8px;
   border: 1px solid #eaeaea;
   background: #fff;
-  width: 288px;
+  width: 376px;
   height: 48px;
   flex-shrink: 0;
 }
@@ -61,7 +61,6 @@
 }
 
 .entry-field_item-sms {
-  width: 288px;
   height: 118px;
   flex-shrink: 0;
 }
@@ -157,9 +156,19 @@
     opacity: 1;
     z-index: 1000;
     left: 0;
+    padding: 24px 16px;
   }
   .section_btn {
     padding-bottom: 32px;
+  }
+  .entry-field_item {
+    width: 288px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+  .entry-field_item-sms {
+    height: 118px;
+    flex-shrink: 0;
   }
 }
 

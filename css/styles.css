@@ -189,6 +189,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-height: 100px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .footer-text {
