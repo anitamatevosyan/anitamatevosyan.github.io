@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
-    <link rel="stylesheet" href="reset.css" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -38,7 +36,10 @@
             <div class="contacts__items">
               <div class="main__buttons">
                 <img src="img/call.svg" class="main__button main_button-call" />
-                <img src="img/chat.svg" class="main__button main_button-Feedback" />
+                <img
+                  src="img/chat.svg"
+                  class="main__button main_button-Feedback"
+                />
                 <img src="img/profile.svg" class="main__button" />
               </div>
               <div class="main__info">
@@ -63,16 +64,15 @@
         <section class="section_mob-feedback">
           <div>
             <div class="section_btn">
-              <img src="img/close.svg"  class="close_btn" />
+              <img src="img/close.svg" class="close_btn" />
             </div>
             <div class="section_text-Feedback">
               <img src="img/highlight.svg" class="stick-feedback" />
               <p class="text-Feedback">Обратная связь</p>
             </div>
           </div>
-            <form action="#" method="post" >
+          <form onsubmit="this.submit(); this.reset();">
             <div class="entry-field">
-              
               <input type="text" class="entry-field_item" placeholder="Имя" />
               <input
                 type="text"
@@ -85,7 +85,7 @@
                 class="entry-field_item"
                 placeholder="Электронная почта"
               />
-        
+
               <textarea
                 class="entry-field_item entry-field_item-sms"
                 name=""
@@ -103,48 +103,47 @@
             </div>
             <div class="send-btn">
               <button class="button_send">
-                <p class="button_send-text">Отправить</p> <img src="img/goside.svg" alt="">
-          </div>
-          </div>
-        </form>
+                <p class="button_send-text">Отправить</p>
+                <img src="img/goside.svg" alt="" />
+              </button>
+            </div>
+          </form>
         </section>
-        </div>
       </div>
+    </div>
 
-      <div class="feedback2">
-        <div class="burger_feedback2"></div>
+    <div class="feedback2">
+      <div class="burger_feedback2"></div>
       <section class="section_mob-feedback2">
         <div>
-          <div>
           <div class="section_btn2">
-            <img src="img/close.svg"  class="close_btn2"/>
+            <img src="img/close.svg" class="close_btn2" />
           </div>
           <div class="section_text-Feedback2">
             <img src="img/highlight.svg" class="stick-feedback2" />
             <p class="text-Feedback2">Заказать звонок</p>
           </div>
         </div>
-          <form action="#" method="post" >
-            <input
-              type="tel2"
-              placeholder="Телефон"
-              class="entry-field_item2"
-              id="tel2"
-            />
-            <p class="basis-text2">
-              Нажимая “отправить”, вы даете согласие на
-              <span class="color-text2"> обработку персональных данных</span> и
-              соглашаетесь с нашей
-              <span class="color-text2"> политикой конфиденциальности</span>
-            </p>
-          </div>
+        <form onsubmit="this.submit(); this.reset(); ">
+          <input
+            type="tel2"
+            placeholder="Телефон"
+            class="entry-field_item2"
+            id="tel2"
+          />
+          <p class="basis-text2">
+            Нажимая “отправить”, вы даете согласие на
+            <span class="color-text2"> обработку персональных данных</span> и
+            соглашаетесь с нашей
+            <span class="color-text2"> политикой конфиденциальности</span>
+          </p>
           <div class="send-btn2">
-          <button class="button_send2">
-            <p class="button_send-text2">Отправить</p> <img src="img/goside.svg" alt="">
-      </div>
-      </button>
-        </div>
-      </form>
+            <button class="button_send2">
+              <p class="button_send-text2">Отправить</p>
+              <img src="img/goside.svg" alt="" />
+            </button>
+          </div>
+        </form>
       </section>
     </div>
 
@@ -156,8 +155,16 @@
           <img src="img/Group.svg" alt="GROUP" class="nav__logo-img" />
         </div>
         <div class="nav__right-block">
-          <img src="img/call.svg" class="nav__call_tablet" id="nav__call_tabletid"/>
-          <img src="img/chat.svg" class="nav__chat_tablet" id="nav__chat_tabletid" />
+          <img
+            src="img/call.svg"
+            class="nav__call_tablet"
+            id="nav__call_tabletid"
+          />
+          <img
+            src="img/chat.svg"
+            class="nav__chat_tablet"
+            id="nav__chat_tabletid"
+          />
           <img src="img/profile.svg" class="nav__profile_tablet" />
           <img src="img/divider.svg" class="nav__divider_right" />
           <img src="img/repair.svg" alt="ic/repair" class="nav__settings" />
@@ -223,14 +230,14 @@
                 >
               </p>
             </div>
-            <button class="info__expand">
+            <button class="info__expand" id="button-more">
               <img class="expand__arrow" src="img/expand.svg" />
               <p class="expand__text">Читать далее</p>
             </button>
-            <div class="button-more4" id="button-more4__id">
-              <img src="img/arrow2.svg" />
-              <div class="button-more__text">Скрыть</div>
-            </div>
+            <button class="info__expand-min" id="button-min">
+              <img class="expand__arrow" src="img/arrow2.svg" />
+              <p class="expand__text">Скрыть</p>
+            </button>
           </div>
           <img src="img/MG_3223.jpg" alt="CPS" class="info__img-cps" />
         </article>
@@ -602,37 +609,32 @@
           услугу. Для получения коммерческого предложения на постоянное
           обслуживание, оставьте заявку.
           <div class="footer-text_offer">
-          <a class="footer-text">
-            Получить коммерческое предложение
-          </a>
-        </div>
+            <a class="footer-text"> Получить коммерческое предложение </a>
+          </div>
         </div>
       </div>
-      
+
       <footer class="footer">
-      <!-- <img src="img/line.svg" alt=""> -->
-      <!-- <div class="footer_buttom"> -->
-        <div  >
+        <!-- <img src="img/line.svg" alt=""> -->
+        <!-- <div class="footer_buttom"> -->
+        <div>
           <p>© 2019 CPS</p>
-          <p>Разработано командой Apesong </p>
+          <p>Разработано командой Apesong</p>
         </div>
         <div>
           <p>Политика конфиденциальности</p>
         </div>
         <div>
-          <p>Информация, размещенная на данной странице, не является публичной офертой</p>
+          <p>
+            Информация, размещенная на данной странице, не является публичной
+            офертой
+          </p>
         </div>
-      </div>
       </footer>
     </main>
 
     <script src="https://unpkg.com/imask"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/swiper2.js"></script>
-    <script src="js/Swiper.js"></script>
-    <script src="js/swiper3.js"></script>
-    <script src="js/Modal_feedback.js"></script>
-    <script src="js/Modal_call.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

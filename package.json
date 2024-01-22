@@ -2,12 +2,28 @@
   "name": "mysecondproject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "main": "js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "serve": "webpack serve"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.9.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.7",
+    "node-sass": "^9.0.0",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.70.0",
+    "sass-loader": "^14.0.0",
+    "scss": "^0.2.4",
+    "style-loader": "^3.3.4",
+    "svg-inline-loader": "^0.8.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
 }

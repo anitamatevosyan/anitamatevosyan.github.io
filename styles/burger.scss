@@ -1,5 +1,5 @@
 * {
-  font-family: TT Lakes;
+  font-family: TTlakes-regular;
   font-style: normal;
 }
 
@@ -181,5 +181,19 @@
   }
   #close-sidebar__btn {
     display: none;
+  }
+  #button-more,
+  #button-min {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .info__text-second,
+  .info__text-third {
+    display: inline !important;
+  }
+  #button-more,
+  #button-min {
+    display: none !important;
   }
 }

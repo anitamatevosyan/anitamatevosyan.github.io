@@ -1,10 +1,3 @@
-@import "burger.css";
-@import "grid.css";
-@import "swiper2.css";
-@import "swiper3.css";
-@import "Modal_feedback.css";
-@import "Modal_call.css";
-
 * {
   color: #1b1c21;
   font-family: TT Lakes;
@@ -167,6 +160,15 @@
   gap: 8px;
 }
 
+.info__expand-min {
+  border: none;
+  background: #f8f8f8;
+  display: none;
+  padding-top: 16px;
+  padding-inline: 0;
+  gap: 8px;
+}
+
 .expand__text {
   font-size: 16px;
   font-weight: 500;
@@ -189,7 +191,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-height: 100px;
+  height: fit-content;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
 }
