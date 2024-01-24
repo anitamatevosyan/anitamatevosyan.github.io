@@ -4,6 +4,10 @@
   font-style: normal;
 }
 
+// .body {
+//   width: 1440px;
+// }
+
 .nav__left-block {
   display: flex;
   align-items: center;
@@ -223,6 +227,20 @@
   padding: 20px;
 }
 
+@media (min-width: 768px) {
+  .footer__center {
+    white-space: nowrap;
+  }
+  .footer__end {
+    text-align: right;
+    width: 33%;
+  }
+  .footer__start {
+    text-align: left;
+    width: 33%;
+  }
+}
+
 /* .footer_buttom {
   display: flex;
   flex-direction: column;
@@ -323,5 +341,12 @@
 @media screen and (min-width: 1440px) {
   .main {
     padding-left: 320px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .body {
+    width: 1440px;
+    margin: 0 auto;
   }
 }

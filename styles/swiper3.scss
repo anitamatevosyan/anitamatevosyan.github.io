@@ -28,7 +28,7 @@
   flex-shrink: 0;
 }
 
-.main.swiper.mySwiper3 {
+.main.swiper3.mySwiper3 {
   padding: 16px;
 }
 
@@ -118,7 +118,7 @@
   align-items: center;
   text-align: center;
   display: grid;
-  grid-template-columns: 55% 15% 15% 15%;
+  grid-template-columns: 56% 12% 15% 16%;
 }
 
 .tr-line1 {
@@ -129,7 +129,7 @@
   background: #f8f8f8;
   text-align: center;
   display: grid;
-  grid-template-columns: 55% 15% 15% 15%;
+  grid-template-columns: 56% 12% 14% 20%;
 }
 
 .tb-text {
@@ -200,7 +200,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .table-price {
     display: none;
   }
